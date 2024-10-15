@@ -1,5 +1,4 @@
 {
-    "framework":"nestjs",
     "version": 2,
     "builds": [
         {
@@ -10,7 +9,8 @@
     "routes":[
         {
             "src":"/api/(.*)",
-            "dest":"src/main.ts"
+            "dest":"src/main.ts",
+            "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
         }
     ]
 }
