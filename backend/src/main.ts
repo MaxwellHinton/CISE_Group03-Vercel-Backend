@@ -8,7 +8,7 @@ async function bootstrap() {
   // Originally, CORS blocked our frontend from creating POST requests.
   // The code below tells it to chill and let the methods defined be requested from :3000
   app.enableCors({
-    origin: 'http://localhost:3000',
+    origin: 'https://cise-group03-vercel-backend.vercel.app/',
     methods: 'GET, POST, PUT, DELETE, OPTIONS',
     allowedHeaders: 'Content-type, Authorization',
   });
